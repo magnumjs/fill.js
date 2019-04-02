@@ -7,7 +7,7 @@
 `npm test`
 
 `npm run start` 
-\\=> localhost:3000
+\\=> http://localhost:3000
 
 ## Browser install
 

@@ -1,3 +1,3 @@
-export default function isHTMLEle (item){
-  return item && item.nodeType === 1
+export default function isHTMLEle(item) {
+  return item && item.nodeType === 1;
 }

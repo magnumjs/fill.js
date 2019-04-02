@@ -1,4 +1,4 @@
-import isCached from './isCached'
+import isCached from './isCached';
 
 export default function setText(node, text) {
   // make sure that we have a node and text to insert

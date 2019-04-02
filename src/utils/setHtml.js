@@ -1,5 +1,5 @@
-import isCached from './isCached'
-import isHTMLEle from './isHTMLEle'
+import isCached from './isCached';
+import isHTMLEle from './isHTMLEle';
 
 export default function setHtml(node, html) {
   if (Array.isArray(html)) {

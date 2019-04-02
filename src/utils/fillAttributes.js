@@ -1,10 +1,10 @@
-import getPathIndex from './getPathIndex'
-import getUid from './getUid'
-import setText from './setText'
-import setHtml from './setHtml'
-import makeEvent from './makeEvent'
+import getPathIndex from './getPathIndex';
+import getUid from './getUid';
+import setText from './setText';
+import setHtml from './setHtml';
+import makeEvent from './makeEvent';
 
-const cached = []
+const cached = [];
 // fill in the attributes on an element (setting text and html first)
 export default function fillAttributes(node, attributes, p, parentKey) {
   var tagIndex = getPathIndex(p);
@@ -21,7 +21,6 @@ export default function fillAttributes(node, attributes, p, parentKey) {
       makeEvent(attributes[attrName], attrName, node, parentKey);
       // node[attrName.toLowerCase()] = createEventCall(node, attributes[attrName], attrName)
     } else {
-
       // cache attributes and compare
       if (
         cached[getUid(node)] &&

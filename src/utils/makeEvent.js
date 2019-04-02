@@ -1,5 +1,5 @@
-import {MAG} from './constants'
-import attachEvent from './attachEvent'
+import {MAG} from './constants';
+import attachEvent from './attachEvent';
 
 export default function makeEvent(event, attrName, node, parentKey) {
   var eventName = attrName.substr(2).toLowerCase();
@@ -9,8 +9,7 @@ export default function makeEvent(event, attrName, node, parentKey) {
     '-' +
     node[MAG].uid;
   var events = (node[MAG].events = node[MAG].events || []);
-  var eventHandlers = (node[MAG].eventHandlers =
-    node[MAG].eventHandlers || []);
+  var eventHandlers = (node[MAG].eventHandlers = node[MAG].eventHandlers || []);
   eventHandlers[eventName] = eventHandlers[eventName] || [];
   eventHandlers[eventName][uid] = event;
 

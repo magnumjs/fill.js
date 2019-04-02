@@ -1,23 +1,23 @@
-import matchingElements from './matchingElements'
-import fillRun from './fillRun'
+import matchingElements from './matchingElements';
+import fillRun from './fillRun';
 
 const ignorekeys = [
-    'toString',
-    'draw',
-    'then',
-    'hasOwnProperty',
-    'willgetprops',
-    'onbeforeunload',
-    'Symbol(Symbol.toStringTag)',
-    'nodeType',
-    'toJSON',
-    'onunload',
-    'willupdate',
-    'didupdate',
-    'didload',
-    'willload',
-    'isupdate'
-  ]
+  'toString',
+  'draw',
+  'then',
+  'hasOwnProperty',
+  'willgetprops',
+  'onbeforeunload',
+  'Symbol(Symbol.toStringTag)',
+  'nodeType',
+  'toJSON',
+  'onunload',
+  'willupdate',
+  'didupdate',
+  'didload',
+  'willload',
+  'isupdate'
+];
 
 export default function findNonAttributes(node, data, p) {
   var elements;
@@ -31,8 +31,6 @@ export default function findNonAttributes(node, data, p) {
     // only attributes start with an underscore
     if (key[0] !== '_' && key.substr(0, 2) != 'on') {
       elements = matchingElements(node, key);
-
-
 
       //TODO: what's this use case??
       // if (_isArray(value)) {

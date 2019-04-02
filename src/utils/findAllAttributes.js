@@ -1,4 +1,4 @@
-import {MAG} from './constants'
+import {MAG} from './constants';
 
 export default function findAllAttributes(node, data) {
   var attributes;

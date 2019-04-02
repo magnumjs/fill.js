@@ -1,5 +1,5 @@
-import childElements from './childElements'
-import elementMatcher from './elementMatcher'
+import childElements from './childElements';
+import elementMatcher from './elementMatcher';
 
 export default function matchingElements(node, key, nested) {
   var elements = childElements(node);

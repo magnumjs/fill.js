@@ -1,4 +1,4 @@
-export default function clone (obj) {
+export default function clone(obj) {
   var temp = function temporary() {
     return obj.apply(obj, arguments);
   };
@@ -8,4 +8,4 @@ export default function clone (obj) {
     }
   }
   return temp;
-};
+}

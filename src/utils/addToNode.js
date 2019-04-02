@@ -1,5 +1,5 @@
-import isCached from './isCached'
-import {MAG} from './constants'
+import isCached from './isCached';
+import {MAG} from './constants';
 
 export default function addToNode(node, val) {
   //TODO: finer grain diffing, attach once
@@ -19,7 +19,6 @@ export default function addToNode(node, val) {
       // clone[MAG] = {
       //   childof: pindex
       // };
-  
     } else if (val[MAG] && val[MAG].scid) {
       clone = node.cloneNode(1);
       clone[MAG] = {
@@ -32,8 +31,8 @@ export default function addToNode(node, val) {
     //Remove children, call UNLOADERS?
     while (node.lastChild) {
       // removeNodeModule(node.lastChild)
-      node.removeChild(node.lastChild)
-    //  removeNode(node.lastChild);
+      node.removeChild(node.lastChild);
+      //  removeNode(node.lastChild);
     }
 
     //TODO: Call configs when adding?
@@ -42,7 +41,6 @@ export default function addToNode(node, val) {
       node.innerHTML = val.innerHTML;
 
       var cid = val[MAG]['childof'];
-
     } else {
       node.appendChild(val);
     }

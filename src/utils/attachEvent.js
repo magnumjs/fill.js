@@ -1,5 +1,5 @@
-import {MAG} from './constants'
-import createEventCall from './createEventCall'
+import {MAG} from './constants';
+import createEventCall from './createEventCall';
 
 //Dynamic listeners without event delegation
 export default function attachEvent(node, eventName) {

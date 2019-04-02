@@ -1,5 +1,5 @@
-import {MAG} from './constants'
-let inc=0
+import {MAG} from './constants';
+let inc = 0;
 
 export default function getUid(element) {
   element[MAG] = element[MAG] || {};

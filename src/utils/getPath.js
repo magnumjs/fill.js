@@ -1,5 +1,5 @@
-import getUid from './getUid'
-import {MAG} from './constants'
+import getUid from './getUid';
+import {MAG} from './constants';
 
 let fhCache = [];
 

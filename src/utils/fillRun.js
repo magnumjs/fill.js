@@ -1,38 +1,38 @@
-import fillNode from './fillNode'
-import nodeListToArray from './nodelistarray'
-import getPath from './getPath'
-import {MAG} from './constants'
-const MAG_KEY = '_key'
-let templates = {}
+import fillNode from './fillNode';
+import nodeListToArray from './nodelistarray';
+import getPath from './getPath';
+import {MAG} from './constants';
+const MAG_KEY = '_key';
+let templates = {};
 // this is the entry point for this module, to fill the dom with data
 
-export default function fillRun (nodeList, data, key) {
-  
+export default function fillRun(nodeList, data, key) {
   var node, dataIsArray;
 
   // there is nothing to do if there is nothing to fill
-  if (!nodeList) {return;}
+  if (!nodeList) {
+    return;
+  }
 
   // remove all child nodes if there is no data
-  if (data == null){
+  if (data == null) {
     data = {
       _text: ''
     };
   }
 
-
   // if (typeof data == 'string') {
   //   if (nodeList.children[0]) nodeList.children[0].textContent = data
   //   else nodeList.textContent = data
   //   return;
-  // } 
+  // }
 
   // CACHE
   // DIFF
   // CHANGE? then modify only the changes
   // KEYS for indentification
 
- // nodeList updates as the dom changes, so freeze it in an array
+  // nodeList updates as the dom changes, so freeze it in an array
   var elements = nodeListToArray(nodeList);
 
   dataIsArray = Array.isArray(data);
@@ -145,7 +145,7 @@ export default function fillRun (nodeList, data, key) {
         });
       }
     }
-  } 
+  }
 
   // now fill each node with the data
   for (var i = 0; i < elements.length; i++) {
@@ -159,4 +159,4 @@ export default function fillRun (nodeList, data, key) {
       fillNode(elements[i], data, p, key);
     }
   }
-};
+}

@@ -1,9 +1,9 @@
-import isHTMLEle from './isHTMLEle'
-import getPathIndex from './getPathIndex'
-import findAllAttributes from './findAllAttributes'
-import fillAttributes from './fillAttributes'
-import findNonAttributes from './findNonAttributes'
-import addToNode from './addToNode'
+import isHTMLEle from './isHTMLEle';
+import getPathIndex from './getPathIndex';
+import findAllAttributes from './findAllAttributes';
+import fillAttributes from './fillAttributes';
+import findNonAttributes from './findNonAttributes';
+import addToNode from './addToNode';
 
 export default function fillNode(node, data, p, key) {
   var attributes;
@@ -33,7 +33,6 @@ export default function fillNode(node, data, p, key) {
       },
       p
     );
-
 
   // find all the attributes
   attributes = findAllAttributes(node, data);

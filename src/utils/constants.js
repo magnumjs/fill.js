@@ -1,3 +1,3 @@
-const MAG = '__mag__'
+const MAG = '__mag__';
 
-export {MAG}
+export {MAG};

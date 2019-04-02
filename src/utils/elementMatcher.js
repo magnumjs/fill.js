@@ -1,4 +1,3 @@
-
 // match elements on tag, id, name, class name, data-bind, etc.
 
 export default function elementMatcher(element, key) {
