@@ -1,4 +1,4 @@
-import getPathIndex from './getPathIndex';
+// import getPathIndex from './getPathIndex';
 import getUid from './getUid';
 import setText from './setText';
 import setHtml from './setHtml';
@@ -7,7 +7,7 @@ import makeEvent from './makeEvent';
 const cached = [];
 // fill in the attributes on an element (setting text and html first)
 export default function fillAttributes(node, attributes, p, parentKey) {
-  var tagIndex = getPathIndex(p);
+  //var tagIndex = getPathIndex(p);
 
   cached[getUid(node)] = cached[getUid(node)] || [];
 

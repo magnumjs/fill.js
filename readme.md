@@ -13,34 +13,30 @@
 
 `<script src="//unpkg.com/fill.js"></script>`
 
-## Example
+## Examples
 
 ```html
-<ul>
-    <li><name/></li>
-</ul>
+<div id="root">
+    <ul>
+      <li>
+        <name/>
+      </li>
+    </ul>
+</div>
 ```
-
-```json
-{"li": [
-  {"name": "Joe"},
-  {"name": "Mike"}
-]}
-```
-
 ```js
-fill(Node, Data)
-```
+const JSON = {
+  "li": [{
+    "name": "Joe"
+  }, {
+    "name": "Mike"
+  }]
+}
 
-```html
-<ul>
-    <li>
-        <name>Joe</name>
-    </li>
-    <li>
-        <name>Mike</name>
-    </li>
-</ul>
+fill(document.getElementById("root"), JSON)
 ```
+*inline html*
+[Try it out](https://jsbin.com/kuwahirale/edit?html,js,output)
 
+*dynamic node*
 [Try it out](https://jsbin.com/lekevemuku/edit?html,js,output)

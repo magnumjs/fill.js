@@ -20,11 +20,11 @@ export default function addToNode(node, val) {
       //   childof: pindex
       // };
     } else if (val[MAG] && val[MAG].scid) {
-      clone = node.cloneNode(1);
+      const clone = node.cloneNode(1);
       clone[MAG] = {
         childof: val[MAG].scid
       };
-      mag._cprops[val[MAG].scid] = clone;
+      //mag._cprops[val[MAG].scid] = clone;
     }
 
     //remove, replace?
@@ -40,7 +40,7 @@ export default function addToNode(node, val) {
     if (val[MAG] && val[MAG]['childof'] !== undefined) {
       node.innerHTML = val.innerHTML;
 
-      var cid = val[MAG]['childof'];
+      //var cid = val[MAG]['childof'];
     } else {
       node.appendChild(val);
     }
