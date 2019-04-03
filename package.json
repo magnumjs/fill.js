@@ -1,6 +1,6 @@
 {
   "name": "fill.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple and fun JSON to HTML templating",
   "main": "lib/main.js",
   "unpkg": "dist/fill.min.js",
